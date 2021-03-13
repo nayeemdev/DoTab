@@ -1,12 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+	<!-- Meta Data -->
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>DoTab</title>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="nayeemdev" />
+	<meta name="description" content="Full Stack Developer."> 
+	
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="assets/img/logo/logo.png">
+	<meta name="twitter:title" content="Home">
+	<meta name="twitter:site" content="@nayeemdev">
+	<meta name="twitter:creator" content="@nayeemdev"> 
+	
+	<!-- Open Graph data -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Home">
+	<meta property="og:url" content="https://nayeemdev.github.io/">
+	<meta property="og:site_name" content="Nayeem Hossain">
+	<meta property="og:image" content="assets/img/logo/logo.png">
+	
+	<!-- Google Meta -->
+	<meta name="google-site-verification" content="LXeirZYSBk47aNu0DDM0CSdKAXplRUl3loltDy9CjR4" />
+	
+	<!-- Title -->
+	<title>New Tab :: DoTab - Your Easy Access Productivity Tools</title>
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+	<link rel="stylesheet" id="dark-mode" type="text/css" href="assets/styles/style-dark.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
 </head>
+
 <body>
-	<h1>DoTab</h1>
+	<main class="main center">
+		<!-- Dark/Light Toggle -->
+		<div class="dark-light m-3">
+			<div class="btn-group" role="group">
+				<button data-toggle="tooltip" title="Switch to Light Mode" type="button" class="btn toggle-btn light"><i class="fas fa-sun"></i></button>
+				<button data-toggle="tooltip" title="Switch to Dark Mode" type="button" class="btn toggle-btn dark"><i class="fas fa-moon"></i></button>
+			  </div>
+		</div>
+
+		<div class="container gutter-top">
+			<header class="header box">
+				<div class="header__left">
+					<div class="header__photo">
+						<img class="header__photo-img" src="assets/img/logo/logo.png" alt="Md Nayeem Hossain">
+					</div>
+					<div class="header__base-info">
+						<div class="status text-white">14 Mar 2021</div>
+						<ul class="header__social">
+							<li><a target="_blank" href="https://facebook.com/nayeemdev"><i class="fab fa-facebook"></i></a></li>
+							<li><a target="_blank" href="https://twitter.com/nayeemdev"><i class="fab fa-twitter"></i></a></li>
+							<li><a target="_blank" href="https://linkedin.com/in/nayeemdev"><i class="fab fa-linkedin"></i></a></li>
+							<li><a target="_blank" href="https://github.com/nayeemdev"><i class="fab fa-github"></i></a></li>
+							<li><a target="_blank" href="https://stackoverflow.com/users/9841556"><i class="fab fa-stack-overflow"></i></a></li>
+							<li><a target="_blank" href="https://hackerrank.com/nayeemdev"><i class="fab fa-hackerrank"></i></a></li>
+							<li data-toggle="tooltip" title="Add New Url" class="addUrl"><a><i class="fas fa-plus border border-primary rounded-circle p-1 text-primary"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__right">
+					<ul class="header__contact">
+						<li><span class="overhead">Qoute</span>Do More What Makes You Happy.</li>
+					</ul>
+				</div>
+			</header>
+			<div class="row sticky-parent">
+				<!-- Sidebar nav -->
+				<aside class="col-12 col-md-12 col-lg-2">
+					<div id="sidebox" class="sidebar box sticky-column">
+						<ul class="nav js-tabs">
+							<li class="nav__item"><a class="active" href="#tasks-tab"><i class="icon-list"></i>Tasks</a>
+							</li>
+							<li class="nav__item"><a href="#notes-tab"><i class="icon-file-text"></i>Notes</a></li>
+							<li class="nav__item"><a href="#news-tab"><i class="icon-book"></i>News</a></li>
+							<li class="nav__item"><a href="#blog-tab"><i class="icon-book-open"></i>Blog</a></li>
+							<li class="nav__item"><a href="#contact-tab"><i class="icon-settings"></i>Settings</a></li>
+						</ul>
+					</div>
+				</aside>
+
+				<!-- Content -->
+				<div class="col-12 col-md-12 col-lg-10">
+					<div class="box box-content mb-5" id="content">
+						<div class="content">
+							<!-- TASKS -->
+							<div id="tasks-tab" class="tabcontent active">
+								<div class="pb-2">
+									<h1 class="title title--h1 first-title title__separate">TASKS</h1>
+									<div class="row">
+										<div class="col-12 col-md-12 col-lg-6">
+											<form action="javascript:void(0);">
+												<div class="input-group mb-3">
+												<input type="text" class="form-control add-task" placeholder="Whats on your task list today?" aria-label="Whats on your task list today? ">
+													<div class="input-group-append">
+														<button class="btn input-group-text">ADD</button>
+													</div>
+												</div>
+											</form>
+										</div>
+										<div class="col-12 col-md-12 col-lg-6">
+											<div class="todo-count">15 Active Tasks </div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="card card-white border-0">
+												<div class="card-body">
+													<ul class="nav nav-pills todo-nav">
+														<li role="presentation" class="nav-item all-task active"><a href="#" class="nav-link">All</a></li>
+														<li role="presentation" class="nav-item active-task"><a href="#" class="nav-link">Active</a></li>
+														<li role="presentation" class="nav-item completed-task"><a href="#" class="nav-link">Completed</a></li>
+													</ul>
+													<div class="todo-list">
+														<div class="todo-item">
+															<div class="checker"><span class=""><input type="checkbox"></span></div>
+															<span>Create theme</span>
+															<a href="javascript:void(0);" class="float-right remove-todo-item"><i class="fas fa-trash-alt"></i></a>
+														</div>
+														<div class="todo-item">
+															<div class="checker"><span class=""><input type="checkbox"></span></div>
+															<span>Work on wordpress</span>
+															<a href="javascript:void(0);" class="float-right remove-todo-item"><i class="fas fa-trash-alt"></i></a>
+														</div>
+														
+														<div class="todo-item">
+															<div class="checker"><span class=""><input type="checkbox"></span></div>
+															<span>Organize office main department</span>
+															<a href="javascript:void(0);" class="float-right remove-todo-item"><i class="fas fa-trash-alt"></i></a>
+														</div>
+														<div class="todo-item">
+															<div class="checker"><span><input type="checkbox"></span></div>
+															<span>Error solve in HTML template</span>
+															<a href="javascript:void(0);" class="float-right remove-todo-item"><i class="fas fa-trash-alt"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- NOTES -->
+							<div id="notes-tab" class="tabcontent">
+								<div class="pb-2">
+									<h1 class="title title--h1 first-title title__separate">NOTES</h1>
+								</div>
+							</div>
+
+							<!-- WORKS -->
+							<div id="news-tab" class="tabcontent">
+								<div class="pb-2">
+									<h1 class="title title--h1 first-title title__separate">DEV NEWS</h1>
+								</div>
+							</div>
+
+							<!-- BLOG -->
+							<div id="blog-tab" class="tabcontent">
+								<div class="pb-2">
+									<h1 class="title title--h1 first-title title__separate">Blog</h1>
+								</div>
+							</div>
+
+							<!-- CONTACT -->
+							<div id="contact-tab" class="tabcontent">
+								<div class="pb-2">
+									<h1 class="title title--h1 first-title title__separate">Contact</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Footer -->
+					<footer class="footer">© 2021 @nayeemdev</footer>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- BackToTop -->
+	<div class="back-to-top"></div>
+
+	<!-- JavaScripts -->
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/plugins.min.js"></script>
+	<script src="assets/js/common.js"></script>
+
+	<!-- Mapbox init -->
+	<script src="assets/js/mapbox.init.js"></script>
+
+	<script src="assets/demo/plugins-demo.js"></script>
+	<script src="app.js"></script>
 </body>
+
 </html>
