@@ -949,6 +949,11 @@ button:focus {
   text-decoration: none;
 }
 
+.header__social a img{
+  height: 30px;
+  width: 30px;
+}
+
 .header__social a:hover {
   color: #304CFD;
 }
