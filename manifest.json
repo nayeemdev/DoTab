@@ -1,0 +1,14 @@
+{
+  "name": "DoTab",
+  "version": "0.01",
+  "description": "DoTab is simple but awesome extension for your new tab to increase your productivity.",
+  "background":{
+    "page": "background.html",
+    "persistent": false
+  },
+  "chrome_url_overrides":{
+    "newtab": "dotab.html"
+  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' object-src 'self'"
+}
