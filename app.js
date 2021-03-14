@@ -3,7 +3,9 @@ $(document).ready(function () {
 	'use strict';
 
 	var Urls = [
-		{ "title": "Github", "url": "https://buymeacoffee.com/nayeemdev", "id": 2 },
+		{ "title": "Github", "url": "https://stackoverflow.com", "id": 4 },
+		{ "title": "Github", "url": "https://nayeemdev.github.io/laravelbestpractices", "id": 3 },
+		{ "title": "Github", "url": "https://nayeemdev.github.io/", "id": 2 },
 		{ "title": "Hashnode", "url": "https://hashnode.com", "id": 1 }
 	];
 	// Initiate Local Storage
