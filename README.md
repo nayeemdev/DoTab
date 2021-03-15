@@ -3,6 +3,8 @@ DoTab is simple but awesome extension for your new tab to increase your producti
 
 ![demo](https://user-images.githubusercontent.com/40033062/111079118-c260c180-84b5-11eb-9879-617e8c73756d.PNG)
 
+![demo white](https://user-images.githubusercontent.com/40033062/111218099-89971a00-8593-11eb-9e08-b1e2929c2a78.PNG)
+
 # How To Install
 Coming soon in live But if You want to use it then download this code and load it from Chrome ↪ More Tools ↪ Extension ↪ Load Extension and select this code as extension.
 
