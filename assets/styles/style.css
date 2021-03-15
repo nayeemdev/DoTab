@@ -2863,3 +2863,92 @@ button:focus {
 .remove-todo-item:hover {
   color: rgb(118, 35, 35);
 }
+
+
+/* Notes Styles */
+
+.note-content {
+  max-width: 750px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.note-input {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.color-picker {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 20px;
+  padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+  border: none;
+  border-radius: 20px;
+  padding: 0;
+}
+
+.notes-list {
+  max-width: 1000px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.note {
+  padding: 15px;
+  border-radius: 5px;
+  width: 260px;
+  box-shadow: 4px 4px #f2f2f2;
+  margin: 10px;
+  height: 160px;
+  border-top: solid 5px #4d4d4d;
+}
+
+.note-view {
+  height: 100px;
+  overflow-y: scroll;
+  scrollbar-width: 6px;
+  scrollbar-color: #f2f2f2f2;
+}
+
+.note-view::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width:580px) {
+  .note-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .notes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .no-notes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .note-input-text {
+    width: auto;
+  }
+}
