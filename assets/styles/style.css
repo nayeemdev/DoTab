@@ -820,7 +820,7 @@ button:focus {
 
 .header__left {
   display: flex;
-  align-items: start;
+  align-items: center;
   flex: 0 0 50%;
   padding-right: 1.875rem;
   position: relative;
@@ -862,8 +862,8 @@ button:focus {
 
 .header__right {
   display: flex;
-  align-items: start;
   flex: 0 0 50%;
+  align-items: center;
 }
 
 .header__right>* {
