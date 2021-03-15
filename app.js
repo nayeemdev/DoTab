@@ -140,7 +140,8 @@ $(document).ready(function () {
 	};
 
 	todo();
-
+	$(".todo-nav .active-task").trigger("click");
+	
 	$(".add-task").keypress(function (e) {
 		if ((e.which == 13) && (!$(this).val().length == 0)) {
 			$('<div class="todo-item"><div class="checker"><span class=""><input type="checkbox"></span></div> <span>' + $(this).val() + '</span> <a href="javascript:void(0);" class="float-right remove-todo-item"><i class="fas fa-trash-alt"></i></a></div>').insertBefore('.todo-list .todo-item:first-child');
