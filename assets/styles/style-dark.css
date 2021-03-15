@@ -415,7 +415,8 @@ select option,
   background-color: #2E2F36;
 }
 
-.todo-count {
+.todo-count,
+.news-item__date {
   color: #FCFCFC;
 }
 
