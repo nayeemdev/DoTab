@@ -7,17 +7,19 @@ DoTab is simple but awesome extension for your new tab to increase your producti
 Coming soon in live But if You want to use it then download this code and load it from Chrome ↪ More Tools ↪ Extension ↪ Load Extension and select this code as extension.
 
 # Features
-* Save Urls
+* Search On Web
 * Tasks
 * Notes
 * Developer News
-* Qoutes
+* Community
+* General Settings
 * Coming Lots of Exciting Features....
 
 # TODO
-- [x] Setup Local Storage
-- [x] Show Urls Froms Localstorage with favicons
-- [ ] Save New Url
-- [ ] Manage Saved Urls
-- [ ] CRUD Tasks
-- [ ] CRUDS Notes
+- [x] Complete Design 
+- [ ] Setting Content
+- [ ] Setup Firebase and LocalStorage(Based on Internet Connection)
+- [ ] URL Management
+- [ ] Dynamic Search Website
+- [ ] Task Module
+- [ ] Notes Module
