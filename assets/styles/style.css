@@ -7,6 +7,10 @@
 /* -----------------------------------------------------------------
     - General Styles
 ----------------------------------------------------------------- */
+/* Hide SxrollBar */
+body::-webkit-scrollbar {
+  display: none;
+}
 *,
 ::before,
 ::after {
@@ -2880,6 +2884,7 @@ button:focus {
 .nav-pills .active {
   color: #FCFCFC !important;
   background-image: linear-gradient(142.17deg, #0DA2FF 6.66%, #0055FF 91.48%);
+  border-radius: 20px;
 }
 
 .nav-item .nav-link {
