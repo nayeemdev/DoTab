@@ -60,7 +60,7 @@ $(document).ready(function () {
 			$.each(Urls, function( index, value ) {
 				urlList += `<li><a target="_blank" data-urlid="${value.id}" href="${value.url}"><img class="rounded" src="https://s2.googleusercontent.com/s2/favicons?domain=${value.url}" alt=""></a></li>`;
 			});
-			urlList += '<li data-toggle="tooltip" title="Add New Url" class="addUrl"><a><i class="fas fa-plus border border-primary rounded-circle p-1 text-primary"></i></a></li>';
+			urlList += '<li data-toggle="tooltip" title="Add New Url" class="addUrl"><a><i class="fas fa-plus border border-primary rounded-circle p-1 text-primary"></i></a></li><li data-toggle="modal" data-target="#manageSavedUrl" ><a><i class="fas fa-cog border border-primary rounded-circle p-1 text-primary"></i></a></li>';
 			$('.header__social').html(urlList);
 		} else if(type == 'Tasks') {
 			console.log('else');
