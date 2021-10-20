@@ -34,19 +34,21 @@ const Tasks = () => {
                         </div>
                       :
                       todos.map( todo => (
-                        <div key={todo.id} className="todo-item">
-                          <div className="checker">
-                            <span>
-                              <input
-                               type="checkbox"
-                               checked={todo.completed}
-                               onChange={() => setTodoCompleted(todo.id, !todo.completed)}
-                               />
-                              </span>
+                        <>
+                        <div className="row">
+                            <div className="col-md-11">
+                            <div key={todo.id} className="todo-item">
+                            <div className="custom-control custom-checkbox">
+                              <input type="checkbox" onChange={() => setTodoCompleted(todo.id, !todo.completed)}  checked={todo.completed} className="custom-control-input" id={todo.id}/>
+                              <label className="custom-control-label" htmlFor={todo.id}>{ todo.label }</label>
                             </div>
-                          <span className="ml-3">{ todo.label }</span>
-                          <button onClick={ () => removeTodo(todo.id)} className="float-right bg-dark text-danger"><i className="fas fa-trash-alt" /></button>
+                          </div>
+                            </div>
+                            <div className="col-md-1 my-auto">
+                              <button onClick={ () => removeTodo(todo.id)} className="float-right bg-dark text-danger"><i className="fas fa-trash-alt" /></button>
+                            </div>
                         </div>
+                        </>
                       ))
                     }
                   </div>

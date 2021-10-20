@@ -22,7 +22,7 @@ const useTodos = () => {
         const todoIdx = todos.findIndex( todo => todo.id === id);
         const newTodos = [...todos];
 
-        newTodos[todoIdx].completed = 'completed';
+        newTodos[todoIdx].completed = completed;
 
         updateTodos(newTodos);
     };
